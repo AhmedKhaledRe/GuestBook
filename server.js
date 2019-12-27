@@ -2,13 +2,17 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const config = require('./config');
+const FakeDb = require('./fake-db');
 
 const messegeRoutes = require('./routes/messeges'),
       userRoutes = require('./routes/users');
 
 mongoose.set('useCreateIndex', true);
 
-mongoose.connect(config.DB_URI,{ useUnifiedTopology: true ,useNewUrlParser: true });
+mongoose.connect(config.DB_URI,{ useUnifiedTopology: true ,useNewUrlParser: true }).then(() => {
+    //const fakeDb = new FakeDb();
+    //fakeDb.seedDb();
+});
 
 const app = express();
 

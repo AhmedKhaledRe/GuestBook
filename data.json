@@ -1,0 +1,31 @@
+{
+  "messeges": [
+      {
+          "description": "Nice."
+      },
+      {
+          "description": "Nice Nice Nice Nice."
+      },
+      {
+          "description": "Nice Nice Nice Nice"
+      },
+      {
+          "description": "Nice Nice Nice Nice"
+      },
+      {
+          "description": "Nice Nice Nice Nice"
+      },
+      {
+          "description": "Nice Nice Nice Nice"
+      }
+  ],
+  "users": [{
+      "username": "Test User",
+      "email": "test@gmail.com",
+      "password": "testtest"
+  }, {
+      "username": "Test User1",
+      "email": "test1@gmail.com",
+      "password": "testtest1"
+  }]
+}
