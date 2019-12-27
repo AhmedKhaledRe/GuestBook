@@ -18,7 +18,7 @@ import { ProtectedRoute } from './components/shared/auth/ProtectedRoute';
 
 import * as actions from './actions';
 
-import './App.css';
+import './App.scss';
 
 const store = require('./reducers').init();
 
