@@ -23,7 +23,7 @@ const userSchema = new Schema({
         max: [32, 'Too long, max is 32 characters'],
         required: 'Password is required'
     },
-    messeges: [{ type: Schema.Types.ObjectId, ref: 'Messege' }]
+    messeges: [{ type: Schema.Types.ObjectId, ref: 'Messege' }],
 });
 
 userSchema.methods.hasSamePassword = function(requestedPassword) {
