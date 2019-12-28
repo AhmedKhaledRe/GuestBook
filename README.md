@@ -17,3 +17,36 @@ About the GuestBook :
         - Log in
         - Write/Edit/Delete Messages
         - And reply to messages
+
+Home Page :
+
+    ![Screenshot](ScreenShots/Screenshot1.png)
+
+Login Page :
+
+    ![Screenshot](ScreenShots/Screenshot2.png)
+
+Register Page : 
+
+    ![Screenshot](ScreenShots/Screenshot3.png)
+
+Manage Your Messeges Page :
+
+    ![Screenshot](ScreenShots/Screenshot4.png)
+
+- project Divided into two Steps (Client / Server) :
+
+    - client/
+
+        - contain ( components folder login / register / messeges ) Designs Folders
+        - styles Folder
+        - actions Folder => that connect Functions FrontEnd To BackEnd APIs
+        - services Folder => that auth user when fetch APIs By check authentication
+    
+    - server files in src/ root
+        - two roots ( users and messeges )
+        - two models ( users and messeges )
+        - controllers folder ( contain routes)
+        - helpers folder ( contain mongoosse normalizeErrors)
+        - data.json contain test data
+        - fake-db.js to load data.json data to mongoDB
