@@ -14,11 +14,11 @@ const MessegeCreateForm = props => {
         type="text"
         label='Description'
         rows='6'
-        className='form-control'
+        className='form-control border ml-5'
         component={BwmTextArea}
       />
 
-      <button className='btn btn-bwm btn-form' type="submit" disabled={!valid || pristine || submitting}>
+      <button className='btn btn-bwm btn-form border rounded-pill btn-dark' type="submit" disabled={!valid || pristine || submitting}>
         Create Messege
       </button>
       <BwmResError errors={errors} />

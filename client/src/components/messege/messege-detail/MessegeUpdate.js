@@ -69,12 +69,12 @@ class MessegeUpdate extends React.Component {
               <div className='row'>
                 <div className='col-12'>
                   <div className='messege'>
-                    <div className="messege-owner m-2">
+                    <div className="messege-owner m-2 mr-5">
                       <img src="https://api.adorable.io/avatars/285/abott@adorable.png" alt="owner"/>
                       <span className="mr-0 font-weight-bold">{messege.user && messege.user.username}</span>
                     </div>
                     <div>
-                    <div className='m-2 font-weight-normal'>
+                    <div className='m-2 ml-5 font-weight-normal'>
                     <EditableText  entity={messege}
                                    entityField={'description'}
                                    className={'messege-description'}
@@ -83,7 +83,7 @@ class MessegeUpdate extends React.Component {
                                    cols={50}
                                    errors={errors}
                                    resetErrors={this.resetMessegeErrors} /></div>
-                    <div className='m-2 pt-5'>
+                    <div className='m-2 ml-5 pt-5'>
                       Created at {pretifyDate(messege.createdAt)}
                     </div>
                     </div>
