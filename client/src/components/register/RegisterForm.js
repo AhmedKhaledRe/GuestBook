@@ -6,7 +6,7 @@ import { BwmResError } from '../../components/shared/form/BwmResError';
 const RegisterForm = props => {
   const { handleSubmit, pristine, submitting, submitCb, valid, errors } = props;
   return (
-    <form onSubmit={handleSubmit(submitCb)}>
+    <form onSubmit={handleSubmit(submitCb)} className='mb-4'>
       <Field
         name="username"
         type="text"
