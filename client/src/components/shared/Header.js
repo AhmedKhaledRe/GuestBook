@@ -17,7 +17,7 @@ class Header extends React.Component {
 
   renderAuthButtons(isAuth) {
     if (isAuth) {
-      return <button className='nav-item nav-link clickable' onClick={this.handleLogout}>Logout</button>
+      return <a className='nav-item nav-link clickable' onClick={this.handleLogout}>Logout</a>
     }
 
     return (
@@ -32,9 +32,9 @@ class Header extends React.Component {
     if (isAuth) {
       return (
         <div className="nav-item dropdown">
-          <button className="nav-link nav-item dropdown-toggle clickable" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a className="nav-link nav-item dropdown-toggle clickable" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Messeges
-          </button>
+          </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <Link className="dropdown-item" to="/messeges/new">Create New Messege</Link>
             <Link className="dropdown-item" to="/messeges/manage">Manage My Messeges</Link>
@@ -60,7 +60,7 @@ class Header extends React.Component {
           <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
             <div className='navbar-nav ml-auto'>
               { isAuth &&
-                <button className='nav-item nav-link'>{username}</button>
+                <a className='nav-item nav-link'>{username}</a>
               }
               {this.renderOwnerSection(isAuth)}
               {this.renderAuthButtons(isAuth)}
